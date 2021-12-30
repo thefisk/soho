@@ -1,3 +1,6 @@
+## My fork of the Soho Hugo theme
+This is just a fork of the Soho theme for Hugo by @alexandrevicenzi. It has some customisations used on my own blog.
+
 # Soho
 
 Soho is a minimalist two-column [hugo](https://gohugo.io) theme based on [Hyde](https://github.com/spf13/hyde) inspired by the success of [Flex](https://github.com/alexandrevicenzi/Flex).
