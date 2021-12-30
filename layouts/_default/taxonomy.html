@@ -1,6 +1,9 @@
 {{ define "main" -}}
 <ul class="posts">
-  <h1>Tag: {{ .Title }}</h1>
+  <h1>{{ .Title }}</h1>
+  {{ if eq .Title "Tags"}}
+  <blockquote>Find interesting posts by tag</blockquote>
+  {{ end }}
   {{ range .Data.Pages -}}
   <li>
     <div class="flex">
