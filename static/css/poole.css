@@ -80,21 +80,26 @@ a:focus {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.25;
-  color: #313131;
+  color: #5385B8;
   text-rendering: optimizeLegibility;
 }
 h1 {
   font-size: 2rem;
+  color: #3F668C;
 }
 h2 {
   margin-top: 1rem;
   font-size: 1.5rem;
+  color: #879EB5;
+  font-weight: 300;
 }
 h3 {
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
   font-size: 1.25rem;
+  font-weight: 400;
 }
 h4, h5, h6 {
   margin-top: 1rem;
@@ -149,11 +154,17 @@ abbr[title] {
 code,
 pre,
 .highlight {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: "Liberation Mono",monospace;
 }
 code {
-  color: #e83e8c;
-  white-space: pre;
+  color: #555;
+  white-space: pre-wrap;
+  background-color: rgba(233, 236, 239, 0.5);
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.2rem;
+  letter-spacing: 0.33px;
+  text-rendering: optimizelegibility;
 }
 pre {
   display: block;
@@ -338,9 +349,10 @@ tbody tr:nth-child(odd) th {
 /* Meta data line below post title */
 .post-date {
   display: block;
-  font-size: 1.0rem;
+  font-size: 0.9rem;
+  font-weight: 100;
   margin-bottom: 1rem;
-  color: #757575;
+  color: #a1a0a0;
 }
 
 .posts .post-date {
