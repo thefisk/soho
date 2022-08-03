@@ -3,6 +3,9 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="{{ if .Params.Keywords }}{{ delimit .Params.Keywords ", " }}{{ else }}{{ delimit $.Site.Params.mainkeywords ", " }}{{ end }}">
+  <meta name="robots" content="index,follow">
+  
   {{ hugo.Generator }}
 
   {{ if .IsHome -}}
@@ -11,7 +14,7 @@
   <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
   {{- end }}
 
-  <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+  <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.longdescription }}{{else}}{{.Description}}{{end}}" />
 
   {{ partial "seo.html" . }}
 
