@@ -7,3 +7,7 @@
 #fiskquotestrong strong {
     color: #4a78a5;
 }
+
+a {
+    display: inline-block;
+}
